@@ -82,12 +82,16 @@ EZvolunteer is a networking app allowing organizations in need of volunteers or 
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login
+   * Organization dashboard
+   * User dashboard
+* User dashboard
+   * Toggle between donation list and volunteer list
+   * Button to user profile
+* Organization dashboard
+   * Toggle between list of active posts and list of applicants
+   * Button to organization profile
+   * Button to register new event 
    
 
 ### Wireframes:
