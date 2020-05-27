@@ -23,4 +23,4 @@ EZvolunteer is a networking app allowing Organizations in need of volunteers or 
 - [ ] Match Users 
 
 ### Wireframes:
-<img src="https://github.com/CodePath-Team4/EZvolunteer/blob/master/Wireframe.pdf" width=800><br>
+<img src="https://github.com/CodePath-Team4/EZvolunteer/blob/master/Wireframe.jpeg" width=800><br>
