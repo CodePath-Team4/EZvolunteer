@@ -19,7 +19,6 @@
 		8D297B76A858CAC1FD2FCFAF /* Pods_EZvolunteerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC40AEC9F1CC8ED0F5EC94CE /* Pods_EZvolunteerTests.framework */; };
 		AD7C86972485967F00F91C76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C86962485967F00F91C76 /* AppDelegate.swift */; };
 		AD7C86992485967F00F91C76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C86982485967F00F91C76 /* SceneDelegate.swift */; };
-		AD7C869B2485967F00F91C76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C869A2485967F00F91C76 /* ViewController.swift */; };
 		AD7C869E2485967F00F91C76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7C869C2485967F00F91C76 /* Main.storyboard */; };
 		AD7C86A02485968200F91C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7C869F2485968200F91C76 /* Assets.xcassets */; };
 		AD7C86A32485968200F91C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7C86A12485968200F91C76 /* LaunchScreen.storyboard */; };
@@ -62,7 +61,6 @@
 		AD7C86932485967F00F91C76 /* EZvolunteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZvolunteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7C86962485967F00F91C76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD7C86982485967F00F91C76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD7C869A2485967F00F91C76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD7C869D2485967F00F91C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD7C869F2485968200F91C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD7C86A22485968200F91C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 				185F853A2485FE1900244395 /* Organization files */,
 				AD7C86962485967F00F91C76 /* AppDelegate.swift */,
 				AD7C86982485967F00F91C76 /* SceneDelegate.swift */,
-				AD7C869A2485967F00F91C76 /* ViewController.swift */,
 				AD7C869C2485967F00F91C76 /* Main.storyboard */,
 				AD7C869F2485968200F91C76 /* Assets.xcassets */,
 				AD7C86A12485968200F91C76 /* LaunchScreen.storyboard */,
@@ -436,7 +433,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD7C869B2485967F00F91C76 /* ViewController.swift in Sources */,
 				185F853E2486129300244395 /* OrgDonateTableViewCell.swift in Sources */,
 				185F85462486297400244395 /* OrgVolunteerDetailCell.swift in Sources */,
 				AD7C86972485967F00F91C76 /* AppDelegate.swift in Sources */,
