@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4D5339E71903F73FC9523384 /* Pods_EZvolunteer_EZvolunteerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DACBFF1E495ED1CC3912F9 /* Pods_EZvolunteer_EZvolunteerUITests.framework */; };
 		6A97AD3EEB945DF6777D865E /* Pods_EZvolunteer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D331B25E8D7D887062D107 /* Pods_EZvolunteer.framework */; };
 		8D297B76A858CAC1FD2FCFAF /* Pods_EZvolunteerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC40AEC9F1CC8ED0F5EC94CE /* Pods_EZvolunteerTests.framework */; };
+		AD1B31B62485F54900AF98F1 /* VolunteerDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B31B52485F54900AF98F1 /* VolunteerDashboardViewController.swift */; };
+		AD1B31B82485F58F00AF98F1 /* VolunteerSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B31B72485F58F00AF98F1 /* VolunteerSignUpViewController.swift */; };
+		AD1B31BA248605F800AF98F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B31B9248605F800AF98F1 /* LoginViewController.swift */; };
+		AD1B31BC2486123800AF98F1 /* OrganizationSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B31BB2486123800AF98F1 /* OrganizationSignUpViewController.swift */; };
+		AD1B31BE2486126800AF98F1 /* OrganizationDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B31BD2486126800AF98F1 /* OrganizationDashboardViewController.swift */; };
 		AD7C86972485967F00F91C76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C86962485967F00F91C76 /* AppDelegate.swift */; };
 		AD7C86992485967F00F91C76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C86982485967F00F91C76 /* SceneDelegate.swift */; };
-		AD7C869B2485967F00F91C76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C869A2485967F00F91C76 /* ViewController.swift */; };
 		AD7C869E2485967F00F91C76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7C869C2485967F00F91C76 /* Main.storyboard */; };
 		AD7C86A02485968200F91C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD7C869F2485968200F91C76 /* Assets.xcassets */; };
 		AD7C86A32485968200F91C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD7C86A12485968200F91C76 /* LaunchScreen.storyboard */; };
@@ -45,10 +49,14 @@
 		6149CDF744D700743D9BE055 /* Pods-EZvolunteerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteerTests.release.xcconfig"; path = "Target Support Files/Pods-EZvolunteerTests/Pods-EZvolunteerTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D4EFAB2B98F9EAB49D1D239 /* Pods-EZvolunteer-EZvolunteerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteer-EZvolunteerUITests.debug.xcconfig"; path = "Target Support Files/Pods-EZvolunteer-EZvolunteerUITests/Pods-EZvolunteer-EZvolunteerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC0D50B59DAE80466EFEBAAD /* Pods-EZvolunteer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteer.release.xcconfig"; path = "Target Support Files/Pods-EZvolunteer/Pods-EZvolunteer.release.xcconfig"; sourceTree = "<group>"; };
+		AD1B31B52485F54900AF98F1 /* VolunteerDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerDashboardViewController.swift; sourceTree = "<group>"; };
+		AD1B31B72485F58F00AF98F1 /* VolunteerSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerSignUpViewController.swift; sourceTree = "<group>"; };
+		AD1B31B9248605F800AF98F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AD1B31BB2486123800AF98F1 /* OrganizationSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationSignUpViewController.swift; sourceTree = "<group>"; };
+		AD1B31BD2486126800AF98F1 /* OrganizationDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationDashboardViewController.swift; sourceTree = "<group>"; };
 		AD7C86932485967F00F91C76 /* EZvolunteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZvolunteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7C86962485967F00F91C76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD7C86982485967F00F91C76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD7C869A2485967F00F91C76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD7C869D2485967F00F91C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD7C869F2485968200F91C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD7C86A22485968200F91C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +109,6 @@
 				5A6B7961605EC52BE8971992 /* Pods-EZvolunteerTests.debug.xcconfig */,
 				6149CDF744D700743D9BE055 /* Pods-EZvolunteerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,11 +149,15 @@
 			children = (
 				AD7C86962485967F00F91C76 /* AppDelegate.swift */,
 				AD7C86982485967F00F91C76 /* SceneDelegate.swift */,
-				AD7C869A2485967F00F91C76 /* ViewController.swift */,
 				AD7C869C2485967F00F91C76 /* Main.storyboard */,
 				AD7C869F2485968200F91C76 /* Assets.xcassets */,
 				AD7C86A12485968200F91C76 /* LaunchScreen.storyboard */,
 				AD7C86A42485968200F91C76 /* Info.plist */,
+				AD1B31B52485F54900AF98F1 /* VolunteerDashboardViewController.swift */,
+				AD1B31B72485F58F00AF98F1 /* VolunteerSignUpViewController.swift */,
+				AD1B31B9248605F800AF98F1 /* LoginViewController.swift */,
+				AD1B31BB2486123800AF98F1 /* OrganizationSignUpViewController.swift */,
+				AD1B31BD2486126800AF98F1 /* OrganizationDashboardViewController.swift */,
 			);
 			path = EZvolunteer;
 			sourceTree = "<group>";
@@ -408,9 +419,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD7C869B2485967F00F91C76 /* ViewController.swift in Sources */,
+				AD1B31B62485F54900AF98F1 /* VolunteerDashboardViewController.swift in Sources */,
 				AD7C86972485967F00F91C76 /* AppDelegate.swift in Sources */,
+				AD1B31BE2486126800AF98F1 /* OrganizationDashboardViewController.swift in Sources */,
 				AD7C86992485967F00F91C76 /* SceneDelegate.swift in Sources */,
+				AD1B31BC2486123800AF98F1 /* OrganizationSignUpViewController.swift in Sources */,
+				AD1B31BA248605F800AF98F1 /* LoginViewController.swift in Sources */,
+				AD1B31B82485F58F00AF98F1 /* VolunteerSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
