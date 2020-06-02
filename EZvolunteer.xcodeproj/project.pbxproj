@@ -14,6 +14,7 @@
 		185F85422486281A00244395 /* OrgDonateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F85412486281A00244395 /* OrgDonateDetailViewController.swift */; };
 		185F85442486283100244395 /* OrgVolunteerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F85432486283100244395 /* OrgVolunteerDetailViewController.swift */; };
 		185F85462486297400244395 /* OrgVolunteerDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F85452486297400244395 /* OrgVolunteerDetailCell.swift */; };
+		185F854824864A7C00244395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185F854724864A7C00244395 /* Main.storyboard */; };
 		4D5339E71903F73FC9523384 /* Pods_EZvolunteer_EZvolunteerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DACBFF1E495ED1CC3912F9 /* Pods_EZvolunteer_EZvolunteerUITests.framework */; };
 		6A97AD3EEB945DF6777D865E /* Pods_EZvolunteer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D331B25E8D7D887062D107 /* Pods_EZvolunteer.framework */; };
 		8D297B76A858CAC1FD2FCFAF /* Pods_EZvolunteerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC40AEC9F1CC8ED0F5EC94CE /* Pods_EZvolunteerTests.framework */; };
@@ -51,6 +52,7 @@
 		185F85412486281A00244395 /* OrgDonateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgDonateDetailViewController.swift; sourceTree = "<group>"; };
 		185F85432486283100244395 /* OrgVolunteerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgVolunteerDetailViewController.swift; sourceTree = "<group>"; };
 		185F85452486297400244395 /* OrgVolunteerDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgVolunteerDetailCell.swift; sourceTree = "<group>"; };
+		185F854724864A7C00244395 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		34751EF7767FA54B184DD290 /* Pods-EZvolunteer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteer.debug.xcconfig"; path = "Target Support Files/Pods-EZvolunteer/Pods-EZvolunteer.debug.xcconfig"; sourceTree = "<group>"; };
 		439EA855D761A1B9DDD3CCF7 /* Pods-EZvolunteer-EZvolunteerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteer-EZvolunteerUITests.release.xcconfig"; path = "Target Support Files/Pods-EZvolunteer-EZvolunteerUITests/Pods-EZvolunteer-EZvolunteerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		54D331B25E8D7D887062D107 /* Pods_EZvolunteer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZvolunteer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 				AD7C869F2485968200F91C76 /* Assets.xcassets */,
 				AD7C86A12485968200F91C76 /* LaunchScreen.storyboard */,
 				AD7C86A42485968200F91C76 /* Info.plist */,
+				185F854724864A7C00244395 /* Main.storyboard */,
 			);
 			path = EZvolunteer;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				AD7C86A32485968200F91C76 /* LaunchScreen.storyboard in Resources */,
 				AD7C86A02485968200F91C76 /* Assets.xcassets in Resources */,
 				AD7C869E2485967F00F91C76 /* Org.storyboard in Resources */,
+				185F854824864A7C00244395 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
