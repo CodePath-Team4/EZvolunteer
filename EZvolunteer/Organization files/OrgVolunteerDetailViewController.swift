@@ -1,5 +1,5 @@
 //
-//  OrgVolunteerViewController.swift
+//  OrgVolunteerDetailViewController.swift
 //  EZvolunteer
 //
 //  Created by apple on 01/06/2020.
@@ -7,26 +7,28 @@
 //
 
 import UIKit
-import Parse
 
-class OrgVolunteerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class OrgVolunteerDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var volTableView: UITableView!
+    @IBOutlet weak var volDetailTableView: UITableView!
+    @IBOutlet weak var amountLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        volTableView.delegate = self
-        volTableView.dataSource = self
+        volDetailTableView.delegate = self
+        volDetailTableView.dataSource = self
         // Do any additional setup after loading the view.
-        
+        amountLabel.layer.borderColor = UIColor.cyan.cgColor
+        amountLabel.layer.borderWidth = 1.0
+        amountLabel.layer.cornerRadius = 8
     }
     
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OrgVolunteerTableViewCell") as! OrgVolunteerTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OrgVolunteerDetailCell") as! OrgVolunteerDetailCell
         
         return cell
     }

@@ -7,16 +7,29 @@
 //
 
 import UIKit
+import Parse
 
-class OrgDonateViewController: UIViewController {
+class OrgDonateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var donateTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        donateTableView.delegate = self
+        donateTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OrgDonateTableViewCell") as! OrgDonateTableViewCell
+        
+        return cell
+    }
     /*
     // MARK: - Navigation
 
