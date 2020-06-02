@@ -1,0 +1,6 @@
+framework module Pods_EZvolunteer_EZvolunteerUITests {
+  umbrella header "Pods-EZvolunteer-EZvolunteerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
