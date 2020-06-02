@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185F85392485FD0200244395 /* OrgDonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F85382485FD0200244395 /* OrgDonateViewController.swift */; };
+		185F853C2486126D00244395 /* OrgVolunteerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F853B2486126D00244395 /* OrgVolunteerViewController.swift */; };
+		185F853E2486129300244395 /* OrgDonateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F853D2486129300244395 /* OrgDonateTableViewCell.swift */; };
+		185F8540248612A400244395 /* OrgVolunteerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F853F248612A400244395 /* OrgVolunteerTableViewCell.swift */; };
 		4D5339E71903F73FC9523384 /* Pods_EZvolunteer_EZvolunteerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DACBFF1E495ED1CC3912F9 /* Pods_EZvolunteer_EZvolunteerUITests.framework */; };
 		6A97AD3EEB945DF6777D865E /* Pods_EZvolunteer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D331B25E8D7D887062D107 /* Pods_EZvolunteer.framework */; };
 		8D297B76A858CAC1FD2FCFAF /* Pods_EZvolunteerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC40AEC9F1CC8ED0F5EC94CE /* Pods_EZvolunteerTests.framework */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185F85382485FD0200244395 /* OrgDonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgDonateViewController.swift; sourceTree = "<group>"; };
+		185F853B2486126D00244395 /* OrgVolunteerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgVolunteerViewController.swift; sourceTree = "<group>"; };
+		185F853D2486129300244395 /* OrgDonateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgDonateTableViewCell.swift; sourceTree = "<group>"; };
+		185F853F248612A400244395 /* OrgVolunteerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgVolunteerTableViewCell.swift; sourceTree = "<group>"; };
 		34751EF7767FA54B184DD290 /* Pods-EZvolunteer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteer.debug.xcconfig"; path = "Target Support Files/Pods-EZvolunteer/Pods-EZvolunteer.debug.xcconfig"; sourceTree = "<group>"; };
 		439EA855D761A1B9DDD3CCF7 /* Pods-EZvolunteer-EZvolunteerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteer-EZvolunteerUITests.release.xcconfig"; path = "Target Support Files/Pods-EZvolunteer-EZvolunteerUITests/Pods-EZvolunteer-EZvolunteerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		54D331B25E8D7D887062D107 /* Pods_EZvolunteer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZvolunteer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +99,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185F853A2485FE1900244395 /* Organization files */ = {
+			isa = PBXGroup;
+			children = (
+				185F85382485FD0200244395 /* OrgDonateViewController.swift */,
+				185F853B2486126D00244395 /* OrgVolunteerViewController.swift */,
+				185F853D2486129300244395 /* OrgDonateTableViewCell.swift */,
+				185F853F248612A400244395 /* OrgVolunteerTableViewCell.swift */,
+			);
+			path = "Organization files";
+			sourceTree = "<group>";
+		};
 		2831F5BDD81CF967A09D1497 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +120,6 @@
 				5A6B7961605EC52BE8971992 /* Pods-EZvolunteerTests.debug.xcconfig */,
 				6149CDF744D700743D9BE055 /* Pods-EZvolunteerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +158,7 @@
 		AD7C86952485967F00F91C76 /* EZvolunteer */ = {
 			isa = PBXGroup;
 			children = (
+				185F853A2485FE1900244395 /* Organization files */,
 				AD7C86962485967F00F91C76 /* AppDelegate.swift */,
 				AD7C86982485967F00F91C76 /* SceneDelegate.swift */,
 				AD7C869A2485967F00F91C76 /* ViewController.swift */,
@@ -409,8 +428,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD7C869B2485967F00F91C76 /* ViewController.swift in Sources */,
+				185F853E2486129300244395 /* OrgDonateTableViewCell.swift in Sources */,
 				AD7C86972485967F00F91C76 /* AppDelegate.swift in Sources */,
+				185F853C2486126D00244395 /* OrgVolunteerViewController.swift in Sources */,
+				185F85392485FD0200244395 /* OrgDonateViewController.swift in Sources */,
 				AD7C86992485967F00F91C76 /* SceneDelegate.swift in Sources */,
+				185F8540248612A400244395 /* OrgVolunteerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

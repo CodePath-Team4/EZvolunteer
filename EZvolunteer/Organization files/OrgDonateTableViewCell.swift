@@ -10,6 +10,13 @@ import UIKit
 
 class OrgDonateTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var orgNameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var causeLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
