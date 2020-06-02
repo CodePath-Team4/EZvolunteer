@@ -98,4 +98,9 @@ EZvolunteer is a networking app allowing organizations in need of volunteers or 
    
 
 ### Wireframes:
-<img src="https://github.com/CodePath-Team4/EZvolunteer/blob/master/Wireframe.jpeg" width=800><br>
+* Sketch:
+  <br><img src="https://github.com/CodePath-Team4/EZvolunteer/blob/master/Wireframe.jpeg" width=800><br>
+* Digital wireframes:
+  <img src="https://github.com/CodePath-Team4/EZvolunteer/blob/master/Screenshot%202020-06-01%20at%2019.13.32.png" width=800> <img src="https://github.com/CodePath-Team4/EZvolunteer/blob/master/Screenshot%202020-06-01%20at%2019.13.59.png" width=800> <img src="https://github.com/CodePath-Team4/EZvolunteer/blob/master/Screenshot%202020-06-01%20at%2019.14.17.png" width=800>
+* Link to an interactive prototype: https://www.figma.com/proto/1vbBYWeK0NYJLPc4McORaf/iphoneX?node-id=14%3A62&scaling=scale-down
+
