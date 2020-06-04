@@ -25,8 +25,11 @@ class AddEventViewController: UIViewController {
        // timeDatePicker.timeZone = TimeZone(secondsFromGMT: 5*60*60)
      //   timeDatePicker.locale = Locale(identifier: "en_US_POSIX")
         
-
         // Do any additional setup after loading the view.
+        eventNameField.layer.borderColor = UIColor.systemTeal.cgColor
+        locationField.layer.borderColor = UIColor.systemTeal.cgColor
+        durationField.layer.borderColor = UIColor.systemTeal.cgColor
+        descriptionField.layer.borderColor = UIColor.systemTeal.cgColor
     }
     
 

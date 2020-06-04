@@ -21,7 +21,7 @@ class OrgDonateTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        amountLabel.layer.borderColor = UIColor.cyan.cgColor
+        amountLabel.layer.borderColor = UIColor.systemTeal.cgColor
         amountLabel.layer.borderWidth = 1.0
         amountLabel.layer.cornerRadius = 8
     }
