@@ -90,6 +90,7 @@
                                             <outlet property="eventNameLabel" destination="Xkg-U5-ETX" id="oOH-bc-WY3"/>
                                             <outlet property="locationLabel" destination="rT4-hq-myG" id="Pe3-tY-bi9"/>
                                             <outlet property="roleLabel" destination="hIo-2a-Hut" id="m2M-Kf-PFP"/>
+                                            <segue destination="GXc-bU-vCZ" kind="presentation" modalPresentationStyle="fullScreen" id="54u-Tn-cI2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -101,7 +102,6 @@
                     <navigationItem key="navigationItem" title="EZvolunteer" id="EIn-ux-gli"/>
                     <connections>
                         <outlet property="volunteerTableView" destination="r6C-Bx-9RL" id="YoS-GR-TQb"/>
-                        <segue destination="GXc-bU-vCZ" kind="presentation" modalPresentationStyle="fullScreen" id="uNA-3q-LIa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGa-P0-KKH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -146,7 +146,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGM-rB-fZX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGM-rB-fZX">
                                 <rect key="frame" x="50" y="286" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -203,7 +203,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organization Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBx-LS-TcR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organization Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBx-LS-TcR">
                                 <rect key="frame" x="50" y="331.5" width="314" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

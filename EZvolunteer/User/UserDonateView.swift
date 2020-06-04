@@ -79,7 +79,6 @@ class UserDonateView:  UIViewController, UITableViewDataSource, UITableViewDeleg
         let event = donatingEvents[indexPath.row]
         let myDestination = segue.destination as!UserDonateDetail
         myDestination.event = event
-        print("\n\n\n\nGot here\n\n\n\n\n")
         donateTableView.deselectRow(at: indexPath, animated: true)
     }
     
