@@ -16,9 +16,15 @@
 		185F85622486F13F00244395 /* OrgDonateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F85612486F13F00244395 /* OrgDonateTableViewCell.swift */; };
 		185F85642486F17F00244395 /* OrgDonateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F85632486F17F00244395 /* OrgDonateDetailViewController.swift */; };
 		4D5339E71903F73FC9523384 /* Pods_EZvolunteer_EZvolunteerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DACBFF1E495ED1CC3912F9 /* Pods_EZvolunteer_EZvolunteerUITests.framework */; };
+		64DEFE0E248880CF00B58684 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DEFE0D248880CF00B58684 /* User.storyboard */; };
+		64DEFE16248885E300B58684 /* UserDonateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DEFE15248885E300B58684 /* UserDonateCell.swift */; };
+		64DEFE1824888B6C00B58684 /* UserVolunteerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DEFE1724888B6C00B58684 /* UserVolunteerCell.swift */; };
+		64DEFE1A24888BFA00B58684 /* UserDonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DEFE1924888BFA00B58684 /* UserDonateView.swift */; };
+		64DEFE1C24888C4000B58684 /* UserVolunteerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DEFE1B24888C4000B58684 /* UserVolunteerView.swift */; };
+		64DEFE1E24888CC000B58684 /* UserDonateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DEFE1D24888CC000B58684 /* UserDonateDetail.swift */; };
+		64DEFE2024888CE500B58684 /* UserVolunteerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DEFE1F24888CE500B58684 /* UserVolunteerDetail.swift */; };
 		6A97AD3EEB945DF6777D865E /* Pods_EZvolunteer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D331B25E8D7D887062D107 /* Pods_EZvolunteer.framework */; };
 		8D297B76A858CAC1FD2FCFAF /* Pods_EZvolunteerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC40AEC9F1CC8ED0F5EC94CE /* Pods_EZvolunteerTests.framework */; };
-		AD1B31B62485F54900AF98F1 /* VolunteerDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B31B52485F54900AF98F1 /* VolunteerDashboardViewController.swift */; };
 		AD1B31B82485F58F00AF98F1 /* VolunteerSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B31B72485F58F00AF98F1 /* VolunteerSignUpViewController.swift */; };
 		AD1B31BA248605F800AF98F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B31B9248605F800AF98F1 /* LoginViewController.swift */; };
 		AD1B31BC2486123800AF98F1 /* OrganizationSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B31BB2486123800AF98F1 /* OrganizationSignUpViewController.swift */; };
@@ -64,9 +70,15 @@
 		54D331B25E8D7D887062D107 /* Pods_EZvolunteer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZvolunteer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6B7961605EC52BE8971992 /* Pods-EZvolunteerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteerTests.debug.xcconfig"; path = "Target Support Files/Pods-EZvolunteerTests/Pods-EZvolunteerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6149CDF744D700743D9BE055 /* Pods-EZvolunteerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteerTests.release.xcconfig"; path = "Target Support Files/Pods-EZvolunteerTests/Pods-EZvolunteerTests.release.xcconfig"; sourceTree = "<group>"; };
+		64DEFE0D248880CF00B58684 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		64DEFE15248885E300B58684 /* UserDonateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDonateCell.swift; sourceTree = "<group>"; };
+		64DEFE1724888B6C00B58684 /* UserVolunteerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVolunteerCell.swift; sourceTree = "<group>"; };
+		64DEFE1924888BFA00B58684 /* UserDonateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDonateView.swift; sourceTree = "<group>"; };
+		64DEFE1B24888C4000B58684 /* UserVolunteerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVolunteerView.swift; sourceTree = "<group>"; };
+		64DEFE1D24888CC000B58684 /* UserDonateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDonateDetail.swift; sourceTree = "<group>"; };
+		64DEFE1F24888CE500B58684 /* UserVolunteerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVolunteerDetail.swift; sourceTree = "<group>"; };
 		8D4EFAB2B98F9EAB49D1D239 /* Pods-EZvolunteer-EZvolunteerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteer-EZvolunteerUITests.debug.xcconfig"; path = "Target Support Files/Pods-EZvolunteer-EZvolunteerUITests/Pods-EZvolunteer-EZvolunteerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC0D50B59DAE80466EFEBAAD /* Pods-EZvolunteer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZvolunteer.release.xcconfig"; path = "Target Support Files/Pods-EZvolunteer/Pods-EZvolunteer.release.xcconfig"; sourceTree = "<group>"; };
-		AD1B31B52485F54900AF98F1 /* VolunteerDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerDashboardViewController.swift; sourceTree = "<group>"; };
 		AD1B31B72485F58F00AF98F1 /* VolunteerSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerSignUpViewController.swift; sourceTree = "<group>"; };
 		AD1B31B9248605F800AF98F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AD1B31BB2486123800AF98F1 /* OrganizationSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationSignUpViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +167,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		64DEFE2124888D6E00B58684 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				64DEFE15248885E300B58684 /* UserDonateCell.swift */,
+				64DEFE1724888B6C00B58684 /* UserVolunteerCell.swift */,
+				64DEFE1924888BFA00B58684 /* UserDonateView.swift */,
+				64DEFE1B24888C4000B58684 /* UserVolunteerView.swift */,
+				64DEFE1D24888CC000B58684 /* UserDonateDetail.swift */,
+				64DEFE1F24888CE500B58684 /* UserVolunteerDetail.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		AD7C868A2485967F00F91C76 = {
 			isa = PBXGroup;
 			children = (
@@ -180,19 +205,20 @@
 		AD7C86952485967F00F91C76 /* EZvolunteer */ = {
 			isa = PBXGroup;
 			children = (
+				64DEFE2124888D6E00B58684 /* User */,
 				185F85562486ECE500244395 /* Org Files */,
 				AD7C86962485967F00F91C76 /* AppDelegate.swift */,
 				AD7C86982485967F00F91C76 /* SceneDelegate.swift */,
+				64DEFE0D248880CF00B58684 /* User.storyboard */,
+				185F85542486E12A00244395 /* Org.storyboard */,
 				AD7C869C2485967F00F91C76 /* Main.storyboard */,
 				AD7C869F2485968200F91C76 /* Assets.xcassets */,
 				AD7C86A12485968200F91C76 /* LaunchScreen.storyboard */,
 				AD7C86A42485968200F91C76 /* Info.plist */,
-				AD1B31B52485F54900AF98F1 /* VolunteerDashboardViewController.swift */,
 				AD1B31B72485F58F00AF98F1 /* VolunteerSignUpViewController.swift */,
 				AD1B31B9248605F800AF98F1 /* LoginViewController.swift */,
 				AD1B31BB2486123800AF98F1 /* OrganizationSignUpViewController.swift */,
 				AD1B31BD2486126800AF98F1 /* OrganizationDashboardViewController.swift */,
-				185F85542486E12A00244395 /* Org.storyboard */,
 			);
 			path = EZvolunteer;
 			sourceTree = "<group>";
@@ -325,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD7C86A32485968200F91C76 /* LaunchScreen.storyboard in Resources */,
+				64DEFE0E248880CF00B58684 /* User.storyboard in Resources */,
 				185F85552486E12B00244395 /* Org.storyboard in Resources */,
 				AD7C86A02485968200F91C76 /* Assets.xcassets in Resources */,
 				AD7C869E2485967F00F91C76 /* Main.storyboard in Resources */,
@@ -455,20 +482,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD1B31B62485F54900AF98F1 /* VolunteerDashboardViewController.swift in Sources */,
+				64DEFE2024888CE500B58684 /* UserVolunteerDetail.swift in Sources */,
+				64DEFE1A24888BFA00B58684 /* UserDonateView.swift in Sources */,
 				AD5D83832486FB650086D1F9 /* AddEventViewController.swift in Sources */,
 				AD7C86972485967F00F91C76 /* AppDelegate.swift in Sources */,
 				185F85602486F11700244395 /* OrgDonateViewController.swift in Sources */,
 				185F855E2486F08500244395 /* OrgVolunteerDetailCell.swift in Sources */,
+				64DEFE1824888B6C00B58684 /* UserVolunteerCell.swift in Sources */,
 				185F85622486F13F00244395 /* OrgDonateTableViewCell.swift in Sources */,
 				185F85642486F17F00244395 /* OrgDonateDetailViewController.swift in Sources */,
 				AD1B31BE2486126800AF98F1 /* OrganizationDashboardViewController.swift in Sources */,
 				AD7C86992485967F00F91C76 /* SceneDelegate.swift in Sources */,
+				64DEFE16248885E300B58684 /* UserDonateCell.swift in Sources */,
 				185F85582486EF2500244395 /* OrgVolunteerViewController.swift in Sources */,
 				185F855C2486F05500244395 /* OrgVolunteerDetailViewController.swift in Sources */,
+				64DEFE1C24888C4000B58684 /* UserVolunteerView.swift in Sources */,
 				185F855A2486EF6C00244395 /* OrgVolunteerTableViewCell.swift in Sources */,
 				AD1B31BC2486123800AF98F1 /* OrganizationSignUpViewController.swift in Sources */,
 				AD1B31BA248605F800AF98F1 /* LoginViewController.swift in Sources */,
+				64DEFE1E24888CC000B58684 /* UserDonateDetail.swift in Sources */,
 				AD1B31B82485F58F00AF98F1 /* VolunteerSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
