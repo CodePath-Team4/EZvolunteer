@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import Parse
 class UserDonateDetail: UIViewController {
-
+    var event : PFObject!
+    var tempOrganization = [PFObject]()
     @IBOutlet weak var descOrgLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var causeLabel: UILabel!
@@ -29,23 +30,31 @@ class UserDonateDetail: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("Got Here 00\n")
 
-        // Do any additional setup after loading the view.
+        descOrgLabel.text! = event["description"] as! String
+        causeLabel.text! = event["cause"] as! String
+        let temp = event["organization"] as! PFUser
+        var tempOrg : PFObject
+        let myObjectID = temp.objectId as! String
+//        let query = PFQuery(className: "User")
+//        query.whereKey("objectId", equalTo: myObjectID)
+//        query.findObjectsInBackground{ (tempOrganization, error) in
+//            if tempOrganization != nil {
+//                self.tempOrganization = tempOrganization!
+//                print(tempOrganization)
+//            }
+//            print(tempOrganization)
+//
+//
+//        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

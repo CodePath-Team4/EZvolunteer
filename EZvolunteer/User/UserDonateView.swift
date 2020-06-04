@@ -37,9 +37,10 @@ class UserDonateView:  UIViewController, UITableViewDataSource, UITableViewDeleg
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return donatingEvents.count
     }
+
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserDonateCell") as! UserDonateCell
+        let cell = donateTableView.dequeueReusableCell(withIdentifier: "UserDonateCell") as! UserDonateCell
         let event = donatingEvents[indexPath.row]
         cell.eventNameLabel.text! = event["name"] as! String
         cell.locationLabel.text! = event["location"] as! String
@@ -71,6 +72,15 @@ class UserDonateView:  UIViewController, UITableViewDataSource, UITableViewDeleg
 
         cell.causeLabel.text! = event["cause"] as! String
         return cell
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = donateTableView.indexPath(for:cell)!
+        let event = donatingEvents[indexPath.row]
+        let myDestination = segue.destination as!UserDonateDetail
+        myDestination.event = event
+        print("\n\n\n\nGot here\n\n\n\n\n")
+        donateTableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
