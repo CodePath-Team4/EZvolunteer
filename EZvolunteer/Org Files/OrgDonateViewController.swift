@@ -46,8 +46,11 @@ class OrgDonateViewController: UIViewController, UITableViewDataSource, UITableV
                 self.donateTableView.reloadData()
             }
         }
+        if let path = donateTableView.indexPathForSelectedRow {
+            donateTableView.deselectRow(at: path, animated: true)
+        }
     }
-    
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return donationEvents.count
     }
