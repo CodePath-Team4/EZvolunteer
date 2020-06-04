@@ -10,6 +10,10 @@ import UIKit
 
 class OrgVolunteerDetailCell: UITableViewCell {
 
+    @IBOutlet weak var volunteerLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var phoneNumLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
