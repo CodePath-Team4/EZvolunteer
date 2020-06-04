@@ -26,7 +26,7 @@ class UserDonateDetail: UIViewController {
     
     
     @IBAction func Cancel(_ sender: Any) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     

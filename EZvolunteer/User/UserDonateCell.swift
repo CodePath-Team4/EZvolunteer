@@ -9,10 +9,11 @@
 import UIKit
 
 class UserDonateCell: UITableViewCell {
-
+    @IBOutlet weak var descriptionLabel1: UILabel!
+    
     @IBOutlet weak var causeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var orgNameLabel: UILabel!
+//    @IBOutlet weak var orgNameLabel: UILabel!
     @IBOutlet weak var eventNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,7 +26,6 @@ class UserDonateCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    @IBAction func Donate(_ sender: Any) {
-    }
+
     
 }
