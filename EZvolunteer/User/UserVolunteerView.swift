@@ -50,6 +50,14 @@ class UserVolunteerView: UIViewController, UITableViewDataSource, UITableViewDel
         return cell
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = volunteerTableView.indexPath(for:cell)!
+        let event = volunteeringEvents[indexPath.row]
+        let myDestination = segue.destination as!UserVolunteerDetail
+        myDestination.event = event
+        volunteerTableView.deselectRow(at: indexPath, animated: true)
+    }
 
 
 }
