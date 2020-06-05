@@ -21,9 +21,11 @@ class UserVolunteerDetail: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var roleLabel: UILabel!
     @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var ApplyButton: UIButton!
     @IBAction func Withdraw(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    @IBOutlet weak var WithdrawButton: UIButton!
     @IBAction func Apply(_ sender: Any) {
         let query = PFQuery(className: "Events")
         query.getObjectInBackground(withId: event.objectId!){
@@ -62,7 +64,8 @@ class UserVolunteerDetail: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ApplyButton.layer.cornerRadius = 8
+        WithdrawButton.layer.cornerRadius = 8
     }
     
 

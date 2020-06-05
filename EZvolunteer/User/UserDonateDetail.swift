@@ -21,6 +21,8 @@ class UserDonateDetail: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var organizationNameLabel: UILabel!
     @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var donateButton: UIButton!
+    @IBOutlet weak var CancelButton: UIButton!
     
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
@@ -58,7 +60,8 @@ class UserDonateDetail: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         textField.delegate = self
 
-    
+        donateButton.layer.cornerRadius = 8
+        CancelButton.layer.cornerRadius = 8
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

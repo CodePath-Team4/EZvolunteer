@@ -188,7 +188,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3J-GY-kgL">
                                         <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
-                                        <color key="backgroundColor" red="0.50495326519999995" green="0.8333992362" blue="0.95011526349999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.28202356090000003" green="0.68494471420000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ZU9-Ej-0gY"/>
                                             <constraint firstAttribute="width" constant="99" id="vFu-HM-w7G"/>
@@ -202,7 +202,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1T-XY-vwY">
                                         <rect key="frame" x="189" y="0.0" width="99" height="30"/>
-                                        <color key="backgroundColor" red="0.50495326519999995" green="0.8333992362" blue="0.95011526349999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.28202356090000003" green="0.68494471420000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="99" id="TRL-lq-gHY"/>
                                             <constraint firstAttribute="height" constant="30" id="qFR-Pg-UAt"/>
@@ -261,6 +261,8 @@
                         <viewLayoutGuide key="safeArea" id="X35-VE-KLG"/>
                     </view>
                     <connections>
+                        <outlet property="ApplyButton" destination="k3J-GY-kgL" id="SJg-Jm-FXE"/>
+                        <outlet property="WithdrawButton" destination="C1T-XY-vwY" id="KPX-Hy-8hC"/>
                         <outlet property="causeLabel" destination="O6n-aV-r1a" id="PzX-OM-oJa"/>
                         <outlet property="dateTimeLabel" destination="aPa-De-7NO" id="o9C-GT-Bf7"/>
                         <outlet property="emailLabel" destination="3un-Af-E3M" id="LUb-5f-Ov3"/>
@@ -420,7 +422,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js7-zj-Mps">
                                         <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
-                                        <color key="backgroundColor" red="0.50495326519999995" green="0.8333992362" blue="0.95011526349999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.34593731160000002" green="0.78603541850000003" blue="0.93103009459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="99" id="KW9-fz-lD4"/>
                                             <constraint firstAttribute="height" constant="30" id="dDN-XF-wu7"/>
@@ -434,7 +436,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uud-PP-M6s">
                                         <rect key="frame" x="189" y="0.0" width="99" height="30"/>
-                                        <color key="backgroundColor" red="0.50495326519999995" green="0.8333992362" blue="0.95011526349999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.34593731160000002" green="0.78603541850000003" blue="0.93103009459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="99" id="68W-Mg-HFw"/>
                                             <constraint firstAttribute="height" constant="30" id="SOb-bw-RRW"/>
@@ -509,9 +511,11 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="CancelButton" destination="Uud-PP-M6s" id="JPs-dV-01n"/>
                         <outlet property="causeLabel" destination="0sE-sf-gbD" id="WNn-xv-WTH"/>
                         <outlet property="descOrgLabel" destination="chh-Bd-brZ" id="597-x8-Sec"/>
                         <outlet property="descriptionLabel" destination="Ba9-Va-gsq" id="uiy-VJ-sna"/>
+                        <outlet property="donateButton" destination="js7-zj-Mps" id="bJ9-az-uf2"/>
                         <outlet property="emailLabel" destination="O6Y-nZ-sKK" id="Wsx-Hq-m3F"/>
                         <outlet property="eventNameLabel" destination="8Gg-VF-EUa" id="9Cz-Kx-SwH"/>
                         <outlet property="locationLabel" destination="mCL-oP-7Ar" id="SGL-hU-zjC"/>
@@ -536,7 +540,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WX6-ju-KEi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="6xo-VO-dH2" kind="relationship" relationship="viewControllers" id="GnX-2A-XY2"/>
