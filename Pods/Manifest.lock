@@ -7,12 +7,10 @@ PODS:
     - Parse/Core (= 1.18.0)
   - Parse/Core (1.18.0):
     - Bolts/Tasks (= 1.9.1)
-  - SquareInAppPaymentsSDK (1.4.0)
 
 DEPENDENCIES:
   - AlamofireImage
   - Parse
-  - SquareInAppPaymentsSDK
 
 SPEC REPOS:
   trunk:
@@ -20,15 +18,13 @@ SPEC REPOS:
     - AlamofireImage
     - Bolts
     - Parse
-    - SquareInAppPaymentsSDK
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   Parse: 79bdda34fdb7eb2a707a43a951c8aae236cb3e34
-  SquareInAppPaymentsSDK: 6c3293e5600c121bbdc5499ffa3b3976e2cf0054
 
-PODFILE CHECKSUM: 9c7e420801dce5afc75b47b172e0d7d3ce8d2e33
+PODFILE CHECKSUM: 05eaed7679ce6de0b7bc93c3dd80389feac660b7
 
 COCOAPODS: 1.9.1
