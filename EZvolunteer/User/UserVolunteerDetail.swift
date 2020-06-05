@@ -22,8 +22,41 @@ class UserVolunteerDetail: UIViewController {
     @IBOutlet weak var roleLabel: UILabel!
     @IBOutlet weak var eventName: UILabel!
     @IBAction func Withdraw(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func Apply(_ sender: Any) {
+        var myevent : PFObject?
+        let query = PFQuery(className: "Events")
+        query.getObjectInBackground(withId: event.objectId as! String){
+            (myevent, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            }else if let myevent = myevent {
+//                print(myevent)
+                var e = myevent["volunteers"] as? [PFUser]
+                e?.append(PFUser.current()!)
+                print(e!)
+                myevent["volunteers"] = e!
+            }
+        }
+        
+        
+        
+//        query.whereKey("objectId", equalTo: event.objectId as! String)
+//        print(event.objectId as! String)
+//                query.findObjectsInBackground{ (volunteeringEvents, error) in
+//                    if volunteeringEvents != nil {
+//                        self.volunteeringEvents = volunteeringEvents!
+//
+//                    }
+//
+//
+//                }
+        print("**********************")
+//        print(volunteeringEvents)
+        print("**********************")
+//        print(event["volunteers"])
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

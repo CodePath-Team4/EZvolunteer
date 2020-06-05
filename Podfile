@@ -8,6 +8,7 @@ target 'EZvolunteer' do
   # Pods for EZvolunteer
   pod "Parse"
   pod "AlamofireImage"
+  pod "SquareInAppPaymentsSDK"
 
   target 'EZvolunteerTests' do
     inherit! :search_paths
