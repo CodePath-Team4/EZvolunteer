@@ -123,7 +123,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="volTableView" destination="9Hb-Wf-g7j" id="tAZ-59-U0v"/>
+                        <outlet property="volTableView" destination="9Hb-Wf-g7j" id="LRm-Id-F8R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytH-zW-KIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,7 +251,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="donateTableView" destination="VOn-1C-Ipu" id="As3-dZ-LHg"/>
+                        <outlet property="donateTableView" destination="VOn-1C-Ipu" id="fiR-OD-fpJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uuU-fe-l1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -518,9 +518,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="emailLabel" destination="hpH-0q-thv" id="WhA-Ni-rAd"/>
-                                            <outlet property="phoneNumLabel" destination="g1Q-Z2-tJZ" id="Sms-Do-Nyp"/>
-                                            <outlet property="volunteerLabel" destination="Stb-BB-Nym" id="M9b-em-mbY"/>
+                                            <outlet property="emailLabel" destination="hpH-0q-thv" id="s1K-vP-45R"/>
+                                            <outlet property="phoneNumLabel" destination="g1Q-Z2-tJZ" id="Xob-nT-Afa"/>
+                                            <outlet property="volunteerLabel" destination="Stb-BB-Nym" id="h7m-p2-ZvV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -546,7 +546,7 @@
                     <connections>
                         <outlet property="amountLabel" destination="NMT-DQ-Zpe" id="u2M-r9-QpR"/>
                         <outlet property="eventLabel" destination="XWw-wN-rHt" id="xf0-FC-9W4"/>
-                        <outlet property="volDetailTableView" destination="fEk-m8-O6l" id="1wO-Rp-oHs"/>
+                        <outlet property="volDetailTableView" destination="fEk-m8-O6l" id="npH-Ki-ha2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehK-tV-jO7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -15,7 +15,7 @@ class OrgVolunteerViewController: UIViewController, UITableViewDelegate, UITable
     
     var volEvents = [PFObject]()
     var events = [PFObject]()
-    var volunteers = [PFUser]()
+//    var volunteers = [PFUser]()
     
     
     override func viewDidLoad() {
@@ -39,6 +39,7 @@ class OrgVolunteerViewController: UIViewController, UITableViewDelegate, UITable
                 var i = 0
                 while i != self.events.count{
                     let event = self.events[i]
+                    print(event["organization"])
                     let organization = event["organization"] as! PFUser
                     if organization.username == PFUser.current()?.username && (event["type"] as! String) == "Volunteering"{
                         self.volEvents.append(event)
@@ -63,10 +64,10 @@ class OrgVolunteerViewController: UIViewController, UITableViewDelegate, UITable
         cell.dateLabel.text = event["datetime"] as? String
         cell.locationLabel.text = event["location"] as? String
         cell.CauseLabel.text = event["cause"] as? String
-        volunteers = event["volunteers"] as! [PFUser]
+        let volunteers = event["volunteers"] as! [PFUser]
         cell.amountLabel.text = "\(volunteers.count)"
         
-        volTableView.deselectRow(at: indexPath, animated: true)
+//        volTableView.deselectRow(at: indexPath, animated: true)
         
         return cell
     }
@@ -84,9 +85,10 @@ class OrgVolunteerViewController: UIViewController, UITableViewDelegate, UITable
         let cell = sender as! UITableViewCell
         let indexPath = volTableView.indexPath(for: cell)!
         let event = volEvents[indexPath.row]
-        
+    
         let detailsViewController = segue.destination as! OrgVolunteerDetailViewController
         detailsViewController.event = event
+        let volunteers = event["volunteers"] as! [PFUser]
         detailsViewController.volunteers = volunteers
         
     }

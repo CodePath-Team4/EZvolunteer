@@ -64,10 +64,9 @@ class OrgDonateViewController: UIViewController, UITableViewDataSource, UITableV
         cell.orgNameLabel.text = organization["name"] as? String
         cell.locationLabel.text = event["location"] as? String
         cell.causeLabel.text = event["cause"] as? String
-        let amount = (event["totalDonations"] as? String) ?? "0.00"
+        let amount = "\(event["totalDonations"]!)"
         cell.amountLabel.text = "$" + amount
         
-        donateTableView.deselectRow(at: indexPath, animated: true)
         
         return cell
     }

@@ -25,20 +25,19 @@ class UserVolunteerDetail: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func Apply(_ sender: Any) {
-        var myevent : PFObject?
         let query = PFQuery(className: "Events")
-        query.getObjectInBackground(withId: event.objectId as! String){
+        query.getObjectInBackground(withId: event.objectId!){
             (myevent, error) in
             if let error = error {
                 print(error.localizedDescription)
-            }else if let myevent = myevent {
+            }else if myevent != nil {
 //                print(myevent)
-                var e = myevent["volunteers"] as? [PFUser]
+                var e = myevent!["volunteers"] as? [PFUser]
                 e?.append(PFUser.current()!)
                 print(e!)
-                myevent["volunteers"] = e!
-                print(myevent)
-                myevent.saveInBackground()
+                myevent!["volunteers"] = e!
+                print(myevent!)
+                myevent!.saveInBackground()
 
             }
         }

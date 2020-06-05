@@ -37,12 +37,23 @@ class OrgVolunteerDetailViewController: UIViewController, UITableViewDelegate, U
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OrgVolunteerDetailCell") as! OrgVolunteerDetailCell
-        
-        let volunteer = volunteers[indexPath.row]
-        
-        cell.volunteerLabel.text = volunteer["name"] as? String
-        cell.emailLabel.text = volunteer.username
-        cell.phoneNumLabel.text = volunteer["phoneNumber"] as? String
+        let volunteer = volunteers[indexPath.row].objectId
+        print(volunteer!)
+        let query = PFQuery(className:"_User")
+        query.getObjectInBackground(withId: volunteer!) { (vol, error) in
+            if error == nil {
+//                print(vol)
+
+                cell.volunteerLabel.text = vol!["name"] as? String
+                cell.emailLabel.text = vol!["email"] as? String
+                cell.phoneNumLabel.text = vol!["phoneNumber"] as? String
+                // Success!
+            } else {
+                // Fail!
+                print("\(error?.localizedDescription)")
+            }
+        }
+
         
         return cell
     }
