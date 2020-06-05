@@ -37,6 +37,9 @@ class UserVolunteerDetail: UIViewController {
                 e?.append(PFUser.current()!)
                 print(e!)
                 myevent["volunteers"] = e!
+                print(myevent)
+                myevent.saveInBackground()
+
             }
         }
         
