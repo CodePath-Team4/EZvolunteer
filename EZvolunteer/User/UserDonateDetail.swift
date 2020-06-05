@@ -8,10 +8,11 @@
 
 import UIKit
 import Parse
-class UserDonateDetail: UIViewController {
+class UserDonateDetail: UIViewController, UITextFieldDelegate {
     var event : PFObject!
     var users = [PFObject]()
 
+    @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var descOrgLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var causeLabel: UILabel!
@@ -21,9 +22,31 @@ class UserDonateDetail: UIViewController {
     @IBOutlet weak var organizationNameLabel: UILabel!
     @IBOutlet weak var eventNameLabel: UILabel!
     
+    @IBAction func onTap(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
     @IBAction func Donate(_ sender: Any) {
-      
+     let amount = Double(textField.text!) ?? 0
+
+               var myevent : PFObject?
+               let query = PFQuery(className: "Events")
+               query.getObjectInBackground(withId: event.objectId as! String){
+                   (myevent, error) in
+                   if let error = error {
+                       print(error.localizedDescription)
+                   }else if let myevent = myevent {
+       //                print(myevent)
+                       myevent["totalDonations"] = myevent["totalDonations"] as! Double + amount
+                    print(myevent["totalDonations"])
+                       myevent.saveInBackground()
+
+                   }
+               }
+               
         
+    self.dismiss(animated: true, completion: nil)
+
     }
     
     
@@ -33,7 +56,7 @@ class UserDonateDetail: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        textField.delegate = self
 
     
     }

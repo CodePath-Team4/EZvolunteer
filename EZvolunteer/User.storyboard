@@ -454,11 +454,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HiN-Hy-I3a">
+                                <rect key="frame" x="63" y="683" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOu-3s-jxk">
+                                <rect key="frame" x="63" y="647.5" width="60" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Tv5-6C-r0Q" firstAttribute="bottom" secondItem="MAj-lh-5b5" secondAttribute="bottom" constant="100" id="0Bl-1A-hnR"/>
                             <constraint firstItem="Ba9-Va-gsq" firstAttribute="leading" secondItem="8Gg-VF-EUa" secondAttribute="leading" id="0K0-5i-bzy"/>
+                            <constraint firstItem="HiN-Hy-I3a" firstAttribute="top" secondItem="KOu-3s-jxk" secondAttribute="bottom" constant="15" id="3CK-Js-b6x"/>
+                            <constraint firstItem="MAj-lh-5b5" firstAttribute="trailing" secondItem="HiN-Hy-I3a" secondAttribute="trailing" id="4E3-Hc-ido"/>
                             <constraint firstItem="O6Y-nZ-sKK" firstAttribute="trailing" secondItem="8Gg-VF-EUa" secondAttribute="trailing" id="4VS-Jq-0B5"/>
                             <constraint firstItem="Tv5-6C-r0Q" firstAttribute="trailing" secondItem="8Gg-VF-EUa" secondAttribute="trailing" constant="50" id="7B8-qU-oX0"/>
                             <constraint firstItem="f9X-t4-TMI" firstAttribute="leading" secondItem="8Gg-VF-EUa" secondAttribute="leading" id="9y8-EZ-Uzt"/>
@@ -466,6 +480,8 @@
                             <constraint firstItem="f9X-t4-TMI" firstAttribute="trailing" secondItem="8Gg-VF-EUa" secondAttribute="trailing" id="Aa3-c9-a6t"/>
                             <constraint firstItem="8Gg-VF-EUa" firstAttribute="top" secondItem="Tv5-6C-r0Q" secondAttribute="top" constant="5" id="Dal-fd-3k3"/>
                             <constraint firstItem="8Gg-VF-EUa" firstAttribute="leading" secondItem="Tv5-6C-r0Q" secondAttribute="leading" constant="50" id="Iex-VU-xX2"/>
+                            <constraint firstItem="MAj-lh-5b5" firstAttribute="leading" secondItem="HiN-Hy-I3a" secondAttribute="leading" id="KGe-YC-mab"/>
+                            <constraint firstItem="HiN-Hy-I3a" firstAttribute="leading" secondItem="KOu-3s-jxk" secondAttribute="leading" id="LTH-nR-YRQ"/>
                             <constraint firstItem="O6Y-nZ-sKK" firstAttribute="leading" secondItem="8Gg-VF-EUa" secondAttribute="leading" id="MWg-Bf-48I"/>
                             <constraint firstItem="chh-Bd-brZ" firstAttribute="trailing" secondItem="8Gg-VF-EUa" secondAttribute="trailing" id="Ocr-FC-SUc"/>
                             <constraint firstItem="O6Y-nZ-sKK" firstAttribute="top" secondItem="CxX-zl-Y3u" secondAttribute="bottom" constant="20" id="Omj-d1-Qtc"/>
@@ -474,6 +490,7 @@
                             <constraint firstItem="Ba9-Va-gsq" firstAttribute="top" secondItem="0sE-sf-gbD" secondAttribute="bottom" constant="20" id="W6g-BE-nMf"/>
                             <constraint firstItem="chh-Bd-brZ" firstAttribute="leading" secondItem="8Gg-VF-EUa" secondAttribute="leading" id="YFw-Ic-SxL"/>
                             <constraint firstItem="CxX-zl-Y3u" firstAttribute="trailing" secondItem="8Gg-VF-EUa" secondAttribute="trailing" id="YJH-dz-3Ui"/>
+                            <constraint firstItem="MAj-lh-5b5" firstAttribute="top" secondItem="HiN-Hy-I3a" secondAttribute="bottom" constant="15" id="YhG-oj-5s8"/>
                             <constraint firstItem="0sE-sf-gbD" firstAttribute="trailing" secondItem="8Gg-VF-EUa" secondAttribute="trailing" id="Zzw-Fb-ydK"/>
                             <constraint firstItem="mCL-oP-7Ar" firstAttribute="top" secondItem="f9X-t4-TMI" secondAttribute="bottom" constant="20" id="aQ8-Ru-KLM"/>
                             <constraint firstItem="0sE-sf-gbD" firstAttribute="leading" secondItem="8Gg-VF-EUa" secondAttribute="leading" id="f2T-Ff-To8"/>
@@ -487,6 +504,9 @@
                             <constraint firstItem="MAj-lh-5b5" firstAttribute="centerX" secondItem="L0B-6v-ooH" secondAttribute="centerX" id="zPy-oW-E32"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tv5-6C-r0Q"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KPs-du-pN2" appends="YES" id="mzi-yc-R8r"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="causeLabel" destination="0sE-sf-gbD" id="WNn-xv-WTH"/>
@@ -497,54 +517,17 @@
                         <outlet property="locationLabel" destination="mCL-oP-7Ar" id="SGL-hU-zjC"/>
                         <outlet property="organizationNameLabel" destination="CxX-zl-Y3u" id="aZY-CZ-wrJ"/>
                         <outlet property="phoneLabel" destination="f9X-t4-TMI" id="GrD-y2-vbD"/>
-                        <segue destination="YOD-aW-6J4" kind="presentation" modalPresentationStyle="fullScreen" id="hRD-mC-JNw"/>
+                        <outlet property="textField" destination="HiN-Hy-I3a" id="Rxn-2q-mNp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrc-RZ-dxu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KPs-du-pN2">
+                    <connections>
+                        <action selector="onTap:" destination="FAc-JQ-IWK" id="6h9-ph-FjF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3350.7246376811595" y="-155.35714285714286"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="fyF-FX-vI6">
-            <objects>
-                <viewController id="YOD-aW-6J4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1mQ-Gi-ARm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose the amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHB-b1-ajK">
-                                <rect key="frame" x="103.5" y="367.5" width="207" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VR6-Gx-xfc">
-                                <rect key="frame" x="107" y="431" width="200" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="koX-ra-BJW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SD2-8m-Pj1">
-                                <rect key="frame" x="184" y="574" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PayPal"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="VR6-Gx-xfc" firstAttribute="centerY" secondItem="1mQ-Gi-ARm" secondAttribute="centerY" id="IbF-H5-9CS"/>
-                            <constraint firstItem="NHB-b1-ajK" firstAttribute="centerX" secondItem="1mQ-Gi-ARm" secondAttribute="centerX" id="iF7-Ww-WDn"/>
-                            <constraint firstItem="NHB-b1-ajK" firstAttribute="centerY" secondItem="1mQ-Gi-ARm" secondAttribute="centerY" constant="-70" id="iUO-Xm-LVJ"/>
-                            <constraint firstItem="VR6-Gx-xfc" firstAttribute="centerX" secondItem="1mQ-Gi-ARm" secondAttribute="centerX" id="yRW-qA-eWF"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="XrC-xe-zWh"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3P3-5Y-xmi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4307" y="-155"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yqE-FI-SjS">
