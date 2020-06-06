@@ -117,7 +117,7 @@
                         <outlet property="emailField" destination="2zf-67-PR1" id="QKT-ZG-HGD"/>
                         <outlet property="passwordField" destination="f5d-h7-SDs" id="hSC-NK-6ea"/>
                         <segue destination="yXh-1o-rSl" kind="presentation" identifier="loginOrgSegue" modalPresentationStyle="fullScreen" id="Vzo-HI-Wrn"/>
-                        <segue destination="pRD-fy-7AY" kind="show" identifier="loginVolunteerSegue" id="4Jy-9b-hER"/>
+                        <segue destination="pRD-fy-7AY" kind="presentation" identifier="loginVolunteerSegue" modalPresentationStyle="fullScreen" id="4Jy-9b-hER"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -418,7 +418,7 @@
                         <outlet property="passwordField" destination="8V0-dd-cDn" id="pNI-Lb-HYI"/>
                         <outlet property="phoneNumberField" destination="2Qu-Eg-5A3" id="DcW-Ho-mTF"/>
                         <outlet property="radiusSlider" destination="v9k-0F-d0X" id="nuZ-hn-LjM"/>
-                        <segue destination="pRD-fy-7AY" kind="show" id="sKL-qa-zAT"/>
+                        <segue destination="pRD-fy-7AY" kind="presentation" modalPresentationStyle="fullScreen" id="sKL-qa-zAT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLF-4v-FEO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -509,7 +509,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Vzo-HI-Wrn"/>
-        <segue reference="4Jy-9b-hER"/>
+        <segue reference="sKL-qa-zAT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="738bb3e3faaecec4e820975ce2a7a98a" width="371" height="168"/>
