@@ -9,7 +9,7 @@
 import UIKit
 
 class UserDonateCell: UITableViewCell {
-    @IBOutlet weak var descriptionLabel1: UILabel!
+//    @IBOutlet weak var descriptionLabel1: UILabel!
     
     @IBOutlet weak var causeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!

@@ -45,7 +45,7 @@ class UserVolunteerView: UIViewController, UITableViewDataSource, UITableViewDel
         cell.eventNameLabel.text! = event["name"] as! String
         cell.dateTimeLabel.text! = event["datetime"] as! String
         cell.locationLabel.text! = event["location"] as! String
-        cell.descriptionLabel.text! = event["description"] as! String
+//        cell.descriptionLabel.text! = event["description"] as! String
         cell.causeLabel.text! = event["cause"] as! String
         return cell
     }

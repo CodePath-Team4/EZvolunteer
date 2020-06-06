@@ -68,7 +68,7 @@ class UserDonateView:  UIViewController, UITableViewDataSource, UITableViewDeleg
 //            }
 //        }
 //        cell.orgNameLabel.text! = organizationObject["name"] as! String
-        cell.descriptionLabel1.text! = event["description"] as! String
+//        cell.descriptionLabel1.text! = event["description"] as! String
 
         cell.causeLabel.text! = event["cause"] as! String
         return cell

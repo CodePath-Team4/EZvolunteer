@@ -10,7 +10,7 @@ import UIKit
 import Parse
 class UserVolunteerCell: UITableViewCell {
 
-    @IBOutlet weak var descriptionLabel: UILabel!
+//    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var causeLabel: UILabel!
     @IBOutlet weak var dateTimeLabel: UILabel!
